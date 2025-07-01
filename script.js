@@ -8,15 +8,24 @@ function closeImage() {
   document.getElementById("imageOverlay").style.display = "none";
 }
 
-const modeToggle = document.getElementById('mode-toggle');
-if (modeToggle) {
-  modeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    modeToggle.textContent = document.body.classList.contains('light-mode')
-      ? '🌙 Dark Mode'
-      : '☀ Light Mode';
-  });
+
+
+function toggleThemeMode() {
+  const body = document.body;
+  const toggleButton = document.getElementById("mode-toggle");
+  const icon = toggleButton.querySelector("i");
+
+  body.classList.toggle("light-mode");
+
+  if (body.classList.contains("light-mode")) {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
 }
+
 
 function toggleProjectDetails(btn) {
   const details = btn.nextElementSibling;
