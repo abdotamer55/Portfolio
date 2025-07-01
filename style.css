@@ -9,11 +9,6 @@
   --secondary-color: #ffffffaa;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Rubik', sans-serif;
@@ -189,6 +184,7 @@ body.light-mode .course-item {
   font-weight: bold;
 }
 
+
 .certificate-card button,
 button[onclick*="toggleProjectDetails"] {
   background: var(--main-color);
@@ -254,4 +250,68 @@ video {
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: #00f7ff;
+}
+
+.hero {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00f7ff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
