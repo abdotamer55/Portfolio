@@ -1,0 +1,257 @@
+:root {
+  --main-color: #00BFFF;
+  --bg-dark: #1a1a1a;
+  --bg-light: #ffffff;
+  --text-dark: #ffffff;
+  --text-light: #000000;
+  --card-dark: #222;
+  --card-light: #f5f5f5;
+  --secondary-color: #ffffffaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  transition: background 0.5s, color 0.5s;
+}
+
+body.light-mode {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+header {
+  background-color: #111;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid var(--main-color);
+}
+
+header h1 {
+  color: var(--main-color);
+  font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+body.light-mode nav a {
+  color: var(--text-light);
+}
+
+nav a:hover {
+  color: var(--main-color);
+}
+
+#mode-toggle {
+  background-color: var(--main-color);
+  border: none;
+  color: black;
+  padding: 8px 12px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  position: relative;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('your-image.jpg') no-repeat center center/cover;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 20px;
+  z-index: 2;
+}
+
+.hero-left h1 {
+  font-size: 3.5rem;
+  color: var(--main-color);
+}
+
+.hero-left p {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+.hero-right {
+  flex: 1;
+  padding: 20px;
+  z-index: 2;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  border: 6px solid var(--main-color);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.6);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--main-color);
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--main-color);
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.project-card,
+.certificate-card,
+.course-item {
+  background-color: var(--card-dark);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--main-color);
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+
+body.light-mode .project-card,
+body.light-mode .certificate-card,
+body.light-mode .course-item {
+  background-color: var(--card-light);
+}
+
+.project-card h3,
+.certificate-card h3 {
+  color: var(--main-color);
+}
+
+.skill-bar label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bar {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background-color: #22ff00a1;
+  height: 20px;
+  padding-left: 10px;
+  line-height: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.certificate-card button,
+button[onclick*="toggleProjectDetails"] {
+  background: var(--main-color);
+  color: #000;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.contact a {
+  display: block;
+  color: var(--main-color);
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.contact i {
+  margin-right: 8px;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  color: var(--text-dark);
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+body.light-mode footer {
+  color: var(--text-light);
+}
+
+h4 {
+  color: var(--main-color);
+}
+
+pre {
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+body.light-mode pre {
+  background-color: #eee;
+  color: #000;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.project-details img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+}
