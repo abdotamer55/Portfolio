@@ -33,6 +33,9 @@
       <p>..</p>
       <p>3rd Year</p>
       <p>..</p>
+
+      <a href="Abdelrahman_Tamer_Professional_CV.pdf" class="view-project-btn" download
+        style="margin-top: 20px;">Download CV</a>
     </div>
     <div class="hero-right">
       <img src="photo.jpg" alt="Your Photo">
@@ -85,6 +88,7 @@
     </div>
   </section>
 
+
   <section id="courses">
     <h2>Completed Courses</h2>
     <div class="course-item">Data Structures & Algorithms <i class="fas fa-check-circle"
@@ -109,90 +113,97 @@
 
   <section id="projects">
     <h2>My Projects</h2>
-    <div class="project-card">
-      <img src="Project analysis/OIP.jpg" alt="Project Cover">
-      <div class="project-content">
-        <h3>Data Analysis project</h3>
-        <p>Python / Data Cleaning / Visualization / Traning /Algorithm </p>
-
-        <button class="view-project-btn" onclick="openProject()">Show Project</button>
-
-        <div id="projectOverlay" class="project-overlay">
-          <div class="project-full-content">
-            <span class="close-btn" onclick="closeProject()">&times;</span>
-
-            <h2>🏠 House Price Prediction – Data Analysis Project</h2>
-
-            <img src="Project analysis/OIP.jpg" alt="Data Cleaning">
-            <p class="img-caption">Step 1: Data cleaning and handling missing values</p>
-
-            <img src="Project analysis/OIP.jpg" alt="Visualization">
-            <p class="img-caption">Step 2: Visualizing insights using Seaborn & Matplotlib</p>
-
-            <img src="Project analysis/OIP.jpg" alt="Model Training">
-            <p class="img-caption">Step 3: Model training with Train/Test Split and K-Fold</p>
-
-            <h3>💻 Project Code </h3>
-            <pre><code class="language-python">
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    vvfrom sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)from sklearn.ensemble import RandomForestRegressor
-    model = RandomForestRegressor()
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-        </code></pre>
-            <h3>🎥 Project Video</h3>
-            <video controls width="100%">
-              <source src="videos/project-demo.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+    <!-- Project Cards Grid -->
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="Project analysis/OIP.jpg" alt="Project Cover">
+        <div class="project-content">
+          <h3>🏠 House Price Prediction</h3>
+          <p>Python / Data Cleaning / Data Modeling / Predection </p>
+          <button class="view-project-btn" onclick="openProject()">Show Details</button>
         </div>
+      </div>
 
+      <!-- Add more project-card divs here if you want -->
+
+    </div>
+
+    <!-- Overlay Modal for Full Project -->
+    <div id="projectOverlay" class="project-overlay">
+      <div class="project-full-content">
+        <span class="close-btn" onclick="closeProject()">&times;</span>
+
+        <h2>🏠 House Price Prediction – Full Overview</h2>
+
+        <img src="Project analysis/Main.png" alt="View">
+        <p class="img-caption">
+          Step 1: Main GUI Interface – A custom-designed dashboard using customtkinter,
+          allowing streamlined navigation across key data analysis modules: Data Handling,
+          Train/Test Split, K-Fold Cross Validation, Prediction, and Final Reporting.
+        </p>
+        <br>
+        <img src="Project analysis/Handling.png" alt="Data Handling">
+        <p class="img-caption">Step 2: Data Preprocessing & Cleaning – This section ensures data quality through missing
+          value treatment,
+          encoding categorical features, outlier removal, and feature selection, setting a solid foundation for model
+          training.
+        </p>
+        <br>
+        <img src="Project analysis/KFold.png" alt="K-Fold">
+        <p class="img-caption">Step 3: K-Fold Cross Validation – Implements K-Fold strategy to evaluate model stability
+          and performance across multiple splits,
+          reporting key regression metrics for each fold to ensure generalization and avoid overfitting.
+        </p>
+        <br>
+        <img src="Project analysis/TrainTest.png" alt="Split">
+        <p class="img-caption">Step 3b: Train/Test Evaluation – Splits the dataset into training and testing sets, then
+          trains a RandomForestRegressoion model and evaluates it using metrics like R²,
+          MSE, RMSE, and MAE to assess baseline performance.
+        </p>
+        <br>
+        <img src="Project analysis/Predect.png" alt="Prediction">
+        <p class="img-caption">Step 4: Real-time Price Prediction – An interactive form where users input new housing
+          features to get instant price predictions from the trained model,
+          enhancing the tool’s practicality and user engagement.
+        </p>
+        <br>
+        <img src="Project analysis/FinalRepo.png" alt="Report">
+        <p class="img-caption">Step 5: Final Comparative Report – Automatically summarizes and compares model
+          performance from Train/Test Split vs. K-Fold results,
+          highlighting the best-performing fold and visualizing insights for informed decision-making.
+        </p>
+        <br>
+        <h3>💻 Project Review </h3>
+        <p>
+          Project: House Price Prediction Tool
+          A complete machine learning solution to predict Melbourne house prices. The app includes data cleaning,
+          feature engineering, multiple model evaluation (Train/Test Split & K-Fold), and real-time prediction through a
+          custom GUI built with customtkinter.
+          ✅ Technologies: Python, Pandas, Scikit-learn, Matplotlib, CustomTkinter
+        </p>
+        <!-- <a href="https://github.com/username/repo_name" target="_blank" style="
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #00BFFF;
+          color: white;
+          text-decoration: none;
+          border-radius: 8px;
+          font-weight: bold;">
+          🔗 View Full Code on GitHub
+        </a>
+        <a>
+          ..
+        </a> -->
+        <br>
+        <h3>🎥 Demo Video</h3>
+        <video controls>
+          <source src="Project analysis/DA Project.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
   </section>
+
 
   <section id="certificates">
     <h2>Certificates</h2>
@@ -216,13 +227,22 @@
       <a href="https://www.linkedin.com/in/abdelrahman-tamer-3a889929a" target="_blank"><i
           class="fab fa-linkedin"></i></a>
       <a href="tel:01157434955"><i class="fas fa-phone"></i></a>
+      <a href="https://wa.me/201157434955" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
+
   </section>
 
   <footer>
     &copy; 2025 ENG Abdelrhman Tamer | All rights reserved.
   </footer>
 
+  <div id="imgModal" class="image-modal" onclick="closeImageModal()">
+    <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+    <img class="image-modal-content" id="imgInModal">
+  </div>
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
   <script src="script.js"></script>
 </body>
 
