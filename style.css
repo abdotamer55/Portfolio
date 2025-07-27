@@ -115,7 +115,7 @@ body.light-mode .contact-icons a:hover {
 /* =================== Header =================== */
 header {
   background-color: #00BFFF;
-  padding: 10px 40px;
+  padding: 8px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
