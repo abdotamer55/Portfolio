@@ -26,33 +26,33 @@ const projectDetails = {
   project2: {
     title: "📊 Excel Dashboard – Full Overview",
     content: `  
-    <img src="Dash Board/All Dash Board.png" alt="View">
+    <img src="Dash board/All Dash Board.png" alt="View">
   <p class="img-caption">
     Step 1: 📊 Full Sales Dashboard (Excel) --- 
 Built with Excel to analyze revenue, regions, and top products dynamically.
   </p>
   <br>
-  <img src="Dash Board/Years Revenue.png" alt="Revenue">
+  <img src="Dash board/Years Revenue.png" alt="Revenue">
   <p class="img-caption">Step 2: 📈 Yearly & Quarterly Revenue Trends --- 
 A line chart visualizing sales performance over time to track yearly growth and seasonal patterns.
   </p>
   <br>
-  <img src="Dash Board/LOV&HOV.png" alt="LOV&HOV">
+  <img src="Dash board/LOV&HOV.png" alt="LOV&HOV">
   <p class="img-caption">Step 3: 🟠 LOV & HOV Product Distribution --- 
 A pie chart showing the proportion of Low-Value (LOV) and High-Value (HOV) products, helping to analyze product category focus.
   </p>
   <br>
-  <img src="Dash Board/Region performance.png" alt="Region">
+  <img src="Dash board/Region performance.png" alt="Region">
   <p class="img-caption">Step 4: 📍 Regional Sales Performance --- 
 Bar and line charts comparing total sales and revenue across different regions to identify top and low-performing areas.
   </p>
   <br>
-  <img src="Dash Board/Top 7.png" alt="Top 7">
+  <img src="Dash board/Top 7.png" alt="Top 7">
   <p class="img-caption">Step 5: 🏆 Top 7 Products by Revenue --- 
 A ranked view of the highest-performing products based on total revenue, highlighting key drivers of business growth.
   </p>
   <br>
-  <img src="Dash Board/Summary.png" alt="Summary">
+  <img src="Dash board/Summary.png" alt="Summary">
   <p class="img-caption">Step 6: 🧾 Executive Summary --- 
 A concise overview of key sales metrics, including total revenue, product mix, and regional insights — offering a quick snapshot for decision-makers.
   </p>
@@ -90,7 +90,7 @@ A concise overview of key sales metrics, including total revenue, product mix, a
   <br>
   <h3>🎥 Demo Video</h3>
   <video controls>
-    <source src="Dash Board/PivotTable Data_Task_Final.xlsx - Excel 2025-07-17 04-04-12.mp4" type="video/mp4">
+    <source src="Dash board/PivotTable Data_Task_Final.xlsx - Excel 2025-07-17 04-04-12.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   `
@@ -241,4 +241,5 @@ function revealSections() {
 window.addEventListener('scroll', revealSections);
 
 document.addEventListener('DOMContentLoaded', revealSections);
+
 
