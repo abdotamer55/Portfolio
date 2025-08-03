@@ -88,11 +88,7 @@ A concise overview of key sales metrics, including total revenue, product mix, a
   </a> -->
 
   <br>
-  <h3>🎥 Demo Video</h3>
-  <video controls>
-    <source src="Dash board/PivotTable Data_Task_Final.xlsx - Excel 2025-07-17 04-04-12.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<a href="https://drive.google.com/file/d/1u0o23gozr4d0SiH-cbPPBx-4MDDjs9Zo/view?usp=drive_link" target="_blank">Watch the Project Video 🎥</a>
   `
   },
   project1: {
@@ -241,5 +237,6 @@ function revealSections() {
 window.addEventListener('scroll', revealSections);
 
 document.addEventListener('DOMContentLoaded', revealSections);
+
 
 
