@@ -13,6 +13,7 @@
 
 <body>
   <header>
+    <h1>AbdelRhman Tamer</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -112,95 +113,28 @@
 
   <section id="projects">
     <h2>My Projects</h2>
-    <!-- Project Cards Grid -->
     <div class="project-grid">
       <div class="project-card">
         <img src="Project analysis/OIP.jpg" alt="Project Cover">
         <div class="project-content">
           <h3>🏠 House Price Prediction</h3>
           <p>Python / Data Cleaning / Data Modeling / Predection </p>
-          <button class="view-project-btn" onclick="openProject()">Show Details</button>
+          <button class="view-project-btn" onclick="openProject('project1')">Show Details</button>
         </div>
       </div>
 
-      <!-- Add more project-card divs here if you want -->
-
-    </div>
-
-    <!-- Overlay Modal for Full Project -->
-    <div id="projectOverlay" class="project-overlay">
-      <div class="project-full-content">
-        <span class="close-btn" onclick="closeProject()">&times;</span>
-
-        <h2>🏠 House Price Prediction – Full Overview</h2>
-
-        <img src="Project analysis/Main.png" alt="View">
-        <p class="img-caption">
-          Step 1: Main GUI Interface – A custom-designed dashboard using customtkinter,
-          allowing streamlined navigation across key data analysis modules: Data Handling,
-          Train/Test Split, K-Fold Cross Validation, Prediction, and Final Reporting.
-        </p>
-        <br>
-        <img src="Project analysis/Handling.png" alt="Data Handling">
-        <p class="img-caption">Step 2: Data Preprocessing & Cleaning – This section ensures data quality through missing
-          value treatment,
-          encoding categorical features, outlier removal, and feature selection, setting a solid foundation for model
-          training.
-        </p>
-        <br>
-        <img src="Project analysis/KFold.png" alt="K-Fold">
-        <p class="img-caption">Step 3: K-Fold Cross Validation – Implements K-Fold strategy to evaluate model stability
-          and performance across multiple splits,
-          reporting key regression metrics for each fold to ensure generalization and avoid overfitting.
-        </p>
-        <br>
-        <img src="Project analysis/TrainTest.png" alt="Split">
-        <p class="img-caption">Step 4: Train/Test Evaluation – Splits the dataset into training and testing sets, then
-          trains a RandomForestRegressoion model and evaluates it using metrics like R²,
-          MSE, RMSE, and MAE to assess baseline performance.
-        </p>
-        <br>
-        <img src="Project analysis/Predect.png" alt="Prediction">
-        <p class="img-caption">Step 5: Real-time Price Prediction – An interactive form where users input new housing
-          features to get instant price predictions from the trained model,
-          enhancing the tool’s practicality and user engagement.
-        </p>
-        <br>
-        <img src="Project analysis/FinalRepo.png" alt="Report">
-        <p class="img-caption">Step 6: Final Comparative Report – Automatically summarizes and compares model
-          performance from Train/Test Split vs. K-Fold results,
-          highlighting the best-performing fold and visualizing insights for informed decision-making.
-        </p>
-        <br>
-        <h3>💻 Project Review </h3>
-        <p>
-          Project: House Price Prediction Tool
-          A complete machine learning solution to predict Melbourne house prices. The app includes data cleaning,
-          feature engineering, multiple model evaluation (Train/Test Split & K-Fold), and real-time prediction through a
-          custom GUI built with customtkinter.
-          ✅ Technologies: Python, Pandas, Scikit-learn, Matplotlib, CustomTkinter
-        </p>
-        <!-- <a href="https://github.com/username/repo_name" target="_blank" style="
-          display: inline-block;
-          padding: 10px 20px;
-          background-color: #00BFFF;
-          color: white;
-          text-decoration: none;
-          border-radius: 8px;
-          font-weight: bold;">
-          🔗 View Full Code on GitHub
-        </a>
-        <a>
-          ..
-        </a> -->
-        <br>
-        <h3>🎥 Demo Video</h3>
-        <video controls>
-          <source src="Project analysis/DA Project.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="project-card">
+        <img src="Dash board/OIP.webp" alt="Project Cover">
+        <div class="project-content">
+          <h3>📊 Dash Board Sales </h3>
+          <p>Python / Data calculation / Data Modeling / visualizations / Microsoft EXCEL </p>
+          <button class="view-project-btn" onclick="openProject('project2')">Show Details</button>
+        </div>
       </div>
-    </div>
+
+      <div id="projectOverlay" class="project-overlay" style="display: none;">
+        <div class="project-full-content"></div>
+      </div>
   </section>
 
 
@@ -216,6 +150,7 @@
   <div id="imageOverlay" class="image-overlay" onclick="closeImage()">
     <img id="overlayImg" src="" alt="Certificate">
   </div>
+
 
 
   <section id="contact">
