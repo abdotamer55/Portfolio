@@ -24,7 +24,7 @@ function toggleThemeMode() {
 
 const projectDetails = {
   project2: {
-    title: "📊 Excel Dashboard – Full Overview",
+    title: " Excel Dashboard – Full Overview",
     content: `  
     <img src="Dash board/All Dash Board.png" alt="View">
   <p class="img-caption">
@@ -237,6 +237,7 @@ function revealSections() {
 window.addEventListener('scroll', revealSections);
 
 document.addEventListener('DOMContentLoaded', revealSections);
+
 
 
 
